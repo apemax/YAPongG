@@ -36,6 +36,7 @@ class aibat
     int PositionY;
     int VelocityX;
     int VelocityY;
+    int Score = 0;
 };
 
 extern aibat aibatone;

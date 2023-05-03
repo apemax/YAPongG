@@ -37,6 +37,7 @@ class playerbat
     int PositionY;
     int VelocityX;
     int VelocityY;
+    int Score = 0;
     string PlayerName;
 };
 

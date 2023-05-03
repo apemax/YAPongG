@@ -178,6 +178,22 @@ int main()
 
           aibatone.VelocityY = ballone.VelocityY;
 
+          if (ballone.PositionX <= 0)
+          {
+            aibatone.Score += 1;
+
+            ballone.PositionX = 640;
+            ballone.PositionY = 360;
+          }
+
+          if (ballone.PositionX + ballone.Width >= SCREEN_WIDTH)
+          {
+            playerone.Score += 1;
+
+            ballone.PositionX = 640;
+            ballone.PositionY = 360;
+          }
+
           SDL_RenderCopy(Renderer, Background, NULL, NULL);
 
           SDL_RenderCopy(Renderer, Bat, NULL, &RectPlayerBat);
